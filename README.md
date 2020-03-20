@@ -9,6 +9,7 @@ bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_
 ```
 **Generate crRNA space sequences and filter "TTTT"**
 ```
+python generate_crRNA_spacer.py nCov_22nt_seqs_NoOffTarget.txt colnum_22nt_Seqs Colnum_22nt_Seqs_Names Final_crRNA.output
 ```
 
 ## 2. Design pan-coronavirus crRNAs
@@ -20,7 +21,9 @@ bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_
 ```
 **Remove Off-target in human transcriptome by using bowtie**
 ```
+bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_seqs_OffTarget_HG38_RNA.sam -v 2
 ```
 **Generate crRNA space sequences and filter "TTTT"**
 ```
+python generate_crRNA_spacer.py nCov_22nt_seqs_NoOffTarget.txt colnum_22nt_Seqs Colnum_22nt_Seqs_Names Final_crRNA.output
 ```
