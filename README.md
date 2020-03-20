@@ -5,6 +5,7 @@
 ```
 **Remove Off-target in human transcriptome by using bowtie**
 ```
+bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_seqs_OffTarget_HG38_RNA.sam -v 2
 ```
 **Generate crRNA space sequences and filter "TTTT"**
 ```
