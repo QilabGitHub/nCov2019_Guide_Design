@@ -6,6 +6,7 @@
 **Remove Off-target in human transcriptome by using bowtie**
 ```
 bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_seqs_OffTarget_HG38_RNA.sam -v 2
+python Summarize_OffTarget.py nCov_22nt_seqs_OffTarget_HG38_RNA.sam Total_RNA_Number 0 nCov_22nt_seqs_OffTarget_Summary.txt
 ```
 **Generate crRNA space sequences and filter "TTTT"**
 ```
@@ -22,6 +23,7 @@ python generate_crRNA_spacer.py nCov_22nt_seqs_NoOffTarget.txt colnum_22nt_Seqs 
 **Remove Off-target in human transcriptome by using bowtie**
 ```
 bowtie -a -S Human_GRCh38_Transcriptome_BowtieIndex nCov_22nt_seqs.fq nCov_22nt_seqs_OffTarget_HG38_RNA.sam -v 2
+python Summarize_OffTarget.py nCov_22nt_seqs_OffTarget_HG38_RNA.sam Total_RNA_Number 0 nCov_22nt_seqs_OffTarget_Summary.txt
 ```
 **Generate crRNA space sequences and filter "TTTT"**
 ```
