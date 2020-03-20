@@ -11,7 +11,7 @@ def main():
     parser.add_argument(
         "input_sequences",
         nargs="+",
-        help="One or more .fasta files. Aligned sequences are accepted (gap characters such as '-' are automatically removed). File paths are expanded using glob()",
+        help="One or more fasta files. Aligned sequences are accepted (gap characters such as '-' are automatically removed). File paths are expanded using glob()",
     )
     parser.add_argument("-o", "--output_root", default=".")
 
