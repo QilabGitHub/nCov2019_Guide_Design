@@ -1,3 +1,6 @@
+# Note: an updated version of this repository is available at https://github.com/QilabGitHub/CRISPR-PACMAN-pool-generation. The new repository includes working examples.
+## Our updated code pipeline has been run on a large number of viral families and groups. You can access these pre-generated guide RNA pools at http://crispr-pacman.stanford.edu/
+
 # nCov2019_Guide_Design
 ## 1. Design effective and specific crRNAs for nCov2019, MERS and SARS
 **Detect 22nt sequences in conserved region (Perfect match COVID-19 <=1 mismatch SARS/MERS)**
