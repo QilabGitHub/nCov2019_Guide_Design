@@ -1,2 +1,2 @@
 biopython==1.75
-ujson==1.35
+ujson==5.2.0
